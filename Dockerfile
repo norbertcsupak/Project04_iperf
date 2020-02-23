@@ -13,7 +13,7 @@ MAINTAINER Brent Salisbury <brent.salisbury@gmail.com>
 RUN apt-get update \
     && apt-get install -y iperf3 \
     && rm -rf /var/lib/apt/lists/*
-CMD ["iperfv","-s","-p 5201"]
+CMD ["iperf3","-s","-p 5201"]
 # Expose the default iperf3 server port
 EXPOSE 5201
 
